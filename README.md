@@ -25,4 +25,7 @@ This project is purely educational and part of my learning journey in web develo
 
 ---
 
+## Live Demo
+https://oliwier-o.github.io/Hometown/
+
 Made by Oliwier O
