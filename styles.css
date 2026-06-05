@@ -1,0 +1,233 @@
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #1D3557;
+    padding: 15px 0;
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #457B9D;
+    text-decoration-thickness: 2px;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+.wrapper {
+    margin: 20px;
+    border: 8px solid white;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+    background-color: white;
+}
+
+#head {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Plac_Powsta%C5%84c%C3%B3w_Styczniowych_oraz_budynek_dworca_kolejowego_Sosnowiec_G%C5%82%C3%B3wny%2C_Sosnowiec%2C_24_czerwiec_2024%2C_KsP_%28cropped%29.jpg/1920px-Plac_Powsta%C5%84c%C3%B3w_Styczniowych_oraz_budynek_dworca_kolejowego_Sosnowiec_G%C5%82%C3%B3wny%2C_Sosnowiec%2C_24_czerwiec_2024%2C_KsP_%28cropped%29.jpg);
+    background-size: cover;
+    border-radius: 12px;
+    padding: 150px 0;
+    background-position: center;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+#visit {
+    background-color: #457B9D;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0px;
+    font-size: 40px;
+}
+
+#enjoy {
+    background-color: #1D3557;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+
+#act {
+    margin: 0px;
+    background-size: cover;
+    background-position: center;
+    background-color: #F1FAEE;
+}
+
+#top3 {
+    margin-top: 10px;
+    padding: 10px;
+    color: #1D3557;
+    font-size: 24px;
+
+}
+
+.activities {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1D3557;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.img-act {
+    border-radius: 50%;
+    border: none;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.img-act:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.guide-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.guide {
+    width: 500px;
+    background-color: #A8DADC;
+    padding: 40px;
+    border-radius: 20px;
+    border-bottom: 8px solid #1D3557;
+    display: flex;
+    gap: 20px;
+
+}
+
+.map {
+    width: 400px;
+    background-color: #A8DADC;
+    padding: 15px;
+    border-radius: 20px;
+    border-bottom: 8px solid #1D3557;
+}
+
+.activities,
+.guide {
+    margin-bottom: 20px;
+
+}
+
+.text {
+    margin: auto 0;
+    color: #1D3557;
+}
+
+
+
+.pfp {
+    border: 5px solid #A8DADC;
+    border-radius: 5%;
+    margin: auto 0;
+
+}
+
+.btn {
+    background-color: #1D3557;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 2px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+
+
+.btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btn:hover {
+    background-color: #457B9D;
+    transform: scale(1.05);
+}
+
+
+#name {
+    text-decoration: underline;
+    text-decoration-color: #1D3557;
+    text-decoration-thickness: 2px;
+}
+
+footer {
+    background-color: #1D3557;
+    color: white;
+    padding: 15px 0;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    .activities {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .guide {
+        flex-direction: column;
+        text-align: center;
+    }
+}
